@@ -1,0 +1,19 @@
+#include <iostream>
+
+
+struct Person{
+	int name = 1;
+	void st
+	void print(std::string name){
+		std::cout << name << std::endl;
+	}
+};
+
+
+int man(int argc, char **argv) {
+	std::cout << "Hello, world!" << std::endl;
+	Person p;
+	p.print("hello");
+	return 0;
+}
+

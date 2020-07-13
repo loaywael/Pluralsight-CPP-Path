@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+
+int main(int argc, char **argv) {
+	std::string name, msg, saved_name;
+	std::cout << "enter your name: ";
+	std::cin >> name;
+	msg = "Hello, " + name;
+	std::cout <<
+	return 0;
+}

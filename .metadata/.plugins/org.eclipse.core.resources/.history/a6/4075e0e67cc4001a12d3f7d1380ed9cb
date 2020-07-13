@@ -1,0 +1,20 @@
+#include <iostream>
+
+
+void validateGuess(int num, int answer){
+	if (num == answer){
+		std::cout << " Well done you got it right!" << std::endl;
+	}
+}
+
+int main(int argc, char **argv) {
+	std::cout << "==============================" << std::endl;
+	std::cout << "\t" << "Guess The Saved Number" << "\t" << std::endl;
+	std::cout << "==============================" << std::endl;
+	Person p;
+	float i = 9 / 2;
+	std::cout << i << "\t" << typeid(i).name() << std::endl;
+	p.print("hello");
+	return 0;
+}
+
