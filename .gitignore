@@ -32,5 +32,7 @@
 *.app
 
 # Extra-Dirs
-.metadata
-.vscode
+*.metadata
+*.vscode
+*build
+*bin

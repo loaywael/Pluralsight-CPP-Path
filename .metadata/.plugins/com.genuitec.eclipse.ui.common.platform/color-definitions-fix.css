@@ -1933,6 +1933,7 @@ IEclipsePreferences#org-eclipse-ui-editors {
 		'TextOccurrenceIndicationColor=27, 98, 145'
 		'asOccurencesIndicationColor=47,47,3'
 		'breakpointIndicationColor=35,83,135'
+		'currentIPColor=80,80,80'
 		'currentLineColor=20,37,25'
 		'filteredSearchResultIndicationColor=18,68,101'
 		'findBlockColor=255,165,0'
@@ -1957,6 +1958,7 @@ IEclipsePreferences#org-eclipse-ui-editors {
 		'searchResultIndication=true'
 		'searchResultIndicationColor=70,68,103'
 		'searchResultTextStyle=BOX'
+		'secondaryIPColor=80,80,80'
 		'spellingIndicationColor=253,170,211'
 		'writeOccurrenceIndicationColor=47,47,3'
 }

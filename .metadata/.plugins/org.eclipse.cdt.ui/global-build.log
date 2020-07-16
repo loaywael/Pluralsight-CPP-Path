@@ -2279,3 +2279,20 @@ Building in: /home/loay/eclipse-workspace/VectorContainer/build/default
 make -f ../../Makefile
 make: Nothing to be done for 'all'.
 Build complete (0 errors, 0 warnings): /home/loay/eclipse-workspace/VectorContainer/build/default
+Building in: /home/loay/eclipse-workspace/ProTemplate/build/default
+make -f ../../Makefile
+g++ -c -O2   -o ProTemplate.o /home/loay/eclipse-workspace/ProTemplate/ProTemplate.cpp
+g++ -o ProTemplate ProTemplate.o
+Build complete (0 errors, 0 warnings): /home/loay/eclipse-workspace/ProTemplate/build/default
+Building in: /home/loay/eclipse-workspace/ProTemplate/build/default
+make -f ../../Makefile
+g++ -c -O2   -o ProTemplate.o /home/loay/eclipse-workspace/ProTemplate/ProTemplate.cpp
+g++ -o ProTemplate ProTemplate.o
+/usr/bin/ld: ProTemplate.o: in function `main':
+ProTemplate.cpp:(.text.startup+0x2d): undefined reference to `Circle::Circle(int)'
+/usr/bin/ld: ProTemplate.cpp:(.text.startup+0x3f): undefined reference to `Rectangle::Rectangle(int, int)'
+/usr/bin/ld: ProTemplate.cpp:(.text.startup+0x5f): undefined reference to `Circle::getArea() const'
+/usr/bin/ld: ProTemplate.cpp:(.text.startup+0x95): undefined reference to `Rectangle::getArea() const'
+collect2: error: ld returned 1 exit status
+make: *** [../../Makefile:16: ProTemplate] Error 1
+Build complete (6 errors, 0 warnings): /home/loay/eclipse-workspace/ProTemplate/build/default
