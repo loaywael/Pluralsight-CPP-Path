@@ -1,0 +1,60 @@
+cmake_minimum_required(VERSION 3.12)
+project(free_memory VERSION 0.1.0)
+
+set(MY_VAR "EMPTY")
+message(STATUS "my variable value is: ${MY_VAR} @${PROJECT_NAME}")
+
+message(STATUS "${PROJECT_SOURCE_DIR}")
+set(PRO_DIR "/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/free_memory")
+set(OTHER_PATH "free_memory")
+
+if(OTHER_PATH STREQUAL PROJECT_SOURCE_DIR)
+    message(STATUS "PROJECT DIR WAS MATCHED")
+elseif(PROJECT_SOURCE_DIR MATCHES "free_memory$")
+    message(STATUS "PRO NAME MATCHED")
+else()
+    message(STATUS "PROJECT DIR MISSMATCH")
+endif()
+
+set(i 0)
+while(i LESS 5)
+    message(STATUS "value of i: ${i}")
+    math(EXPR i "${i}+1")
+endwhile()
+
+foreach(item IN ITEMS foo bar baz qux vir jax kaa bin jin)
+    message(STATUS "Item is ${item}")    
+endforeach()
+
+foreach(idx RANGE 3)
+    message(STATUS "Idx is : ${idx}")
+endforeach()
+
+
+function(print_args)
+foreach(arg IN LISTS ARGV)
+message(STATUS " Got arg: ${arg}")
+endforeach()
+endfunction()
+
+print_args(1, 2, 3)
+
+
+function(add_two_nums out x y)
+    math(EXPR ret "${x} + ${y}")
+    set("${out}" "${ret}" PARENT_SCOPE)
+    # message(STATUS "result: ${res}")
+endfunction()
+
+add_two_nums(val 1 2)
+message(STATUS "sum value: ${val}")
+# add_two_nums(3, 5)
+
+# include(CTest)
+# enable_testing()
+# target_include_directories(run PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/src")
+# add_executable(run)
+
+# set(CPACK_PROJECT_NAME ${PROJECT_NAME})
+# set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
+# include(CPack)
