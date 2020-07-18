@@ -34,5 +34,3 @@
 # Extra-Dirs
 *.metadata
 *.vscode
-*build
-*bin
