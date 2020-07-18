@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/splike/lib_location/Location.cpp
+iostream
+-
+include/Location.hpp
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/splike/lib_location/include/Location.hpp
+
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/splike/lib_location/include/Location.hpp
+iostream
+-
+vector
+-
+

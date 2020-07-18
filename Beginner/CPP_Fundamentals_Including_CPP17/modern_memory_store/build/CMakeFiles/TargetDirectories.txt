@@ -1,0 +1,4 @@
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/build/CMakeFiles/rebuild_cache.dir
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/build/CMakeFiles/edit_cache.dir
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/build/CMakeFiles/run.dir
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/modern_memory_store/build/CMakeFiles/oldlocation.dir

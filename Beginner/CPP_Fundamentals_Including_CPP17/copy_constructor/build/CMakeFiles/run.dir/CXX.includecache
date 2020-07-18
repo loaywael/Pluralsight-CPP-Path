@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/Person.hpp
+iostream
+-
+
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/copy_constructor/src/Person.cpp
+iostream
+-
+Person.hpp
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/copy_constructor/src/Person.hpp
+
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/copy_constructor/src/main.cpp
+iostream
+-
+Person.hpp
+/home/loay/eclipse-workspace/Beginner/CPP_Fundamentals_Including_CPP17/copy_constructor/src/Person.hpp
+
