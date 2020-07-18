@@ -1,5 +1,5 @@
 # Plurialsight-C++-Path
-<<<<<<< HEAD
+
 C++ Path of total 18 course where divided into:   
 - 13 course covering the language levels   
     - Beginner   
@@ -9,17 +9,7 @@ C++ Path of total 18 course where divided into:
     - Creational
     - Structural
     - Behavioural
-=======
-C++ Path of total 18 course where divided into:
-    - 13 course covering the language levels   
-        - Beginner   
-        - Intermediate   
-        - Advanced   
-    - 5 course targeting Design Patterns   
-        - Creational   
-        - Structural   
-        - Behavioural   
->>>>>>> 6377438fdcf4e7732a0baf878c5ec085cbde4cc2
+    
 </br>  
 
 ## Extra Takeaway:   
