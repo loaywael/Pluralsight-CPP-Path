@@ -1,3 +1,0 @@
-make -f ../../Makefile
-../../Makefile:10: *** recipe commences before first target.  Stop.
-Build complete (1 errors, 0 warnings): /home/loay/eclipse-workspace/StringCollections/build/make.profile.linux.x86_64
