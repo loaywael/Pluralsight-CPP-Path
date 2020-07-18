@@ -1,5 +1,13 @@
 # Plurialsight-C++-Path
-C++ Path of total 18 course where 13 course targeting the language levels beginner, intermediate advanced, and 5 course  targeting Design Patterns.   
+C++ Path of total 18 course where divided into:
+    - 13 course covering the language levels   
+        - Beginner   
+        - Intermediate   
+        - Advanced   
+    - 5 course targeting Design Patterns   
+        - Creational   
+        - Structural   
+        - Behavioural   
 </br>  
 
 ## Extra Takeaway:   
