@@ -1,4 +1,4 @@
-# Plurialsight-C++-Path
+# Plurialsight | C++ Path
 
 C++ Path of total 18 course where divided into:   
 - 13 course covering the language levels   
