@@ -19,7 +19,9 @@ public:
     Person(std::string name, int age): _name(name), _age(age), _title(""){}
     inline virtual void do_work() const {std::cout << "Nothing to do!" << std::endl;}
     inline void printName() const {std::cout << _name << "\t";}
-    virtual ~Person(){std::cout << "Destroying Person object\n" << std::endl;}
+    inline void setTitle(const std::string& title) {_title = title;}
+    inline void setName(const std::string& name) {_name = name;}
+     ~Person(){std::cout << "Destroying Person object\n" << std::endl;}
 };
 
 
@@ -29,7 +31,10 @@ private:
     std::string _appName;
 
 public:
-    Developer(): Person::Person(), _appName(""){}
+    Developer(): Person::Person(), _appName("NaN") {
+        Person::setName("None");
+        Person::setTitle("N/A");
+    }
     Developer(std::string name, int age, std::string title, std::string appName)
     : Person::Person(name, age, title), _appName(appName)
     {
