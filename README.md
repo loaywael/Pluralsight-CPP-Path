@@ -45,7 +45,7 @@ C++ Path of total 18 course where divided into:
 </pre>
 </br>   
     
-- Makefile scripts with autonatic dependency tracking.   
-- Cmake files and building for cross-platforms.   
-- working with Visual Studio Code and Eclipse IDEs.   
+- Writing Advanced Makefile scripts with autonatic dependency tracking.   
+- Writing Cmake files and building for cross-platforms.   
+- Working with Visual Studio Code and Eclipse IDEs.   
 </br>   
