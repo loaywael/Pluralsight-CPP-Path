@@ -121,13 +121,25 @@ int main(int argc, char** argv) {
     // -----------   instead use C-style pointer   ------------
     print("Casting C-style ptr from Base to Derived is possible");
     print("going from Base to Derive is dangerous however C-syle cast allow it");
-    Person* norm_pr_ptr = new Developer("Eren", 25, "Legend", "Phishing");
-    Developer* danger_ptr = static_cast<Developer*>(norm_pr_ptr);
-    danger_ptr->printName();
-    danger_ptr->stateYourJob();
-    danger_ptr->do_work();
-    delete norm_pr_ptr; 
-    norm_pr_ptr=nullptr;
+    {
+        Person* norm_pr_ptr = new Developer("Eren", 25, "Legend", "Phishing");
+        Developer* danger_ptr = static_cast<Developer*>(norm_pr_ptr);
+        danger_ptr->printName();
+        danger_ptr->stateYourJob();
+        danger_ptr->do_work();
+        delete norm_pr_ptr; 
+        norm_pr_ptr=nullptr;
+    }
+
+    {   // even after casting the pointer still acts like a Base not derived
+        Person* danger_ptr = new Person("Eren", 25);
+        Developer* most_dangerous_ptr = static_cast<Developer*>(danger_ptr);
+        danger_ptr->printName();
+        // danger_ptr->stateYourJob();
+        danger_ptr->do_work();
+        delete danger_ptr; 
+        danger_ptr=nullptr;
+    }
 
 
     // -----------------------------------
