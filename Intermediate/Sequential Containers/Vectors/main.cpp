@@ -1,6 +1,17 @@
 #include <iostream>
+#include <algorithm>
 #include <fstream>
 #include <vector>
+
+
+inline bool EqualsNoCase(const std::string& s1, const std::string& s2) {
+    // used with find_if to find non-case sensitive word matches
+    return std::equal(std::begin(s1), std::end(s1), std::begin(s2), std::end(s2), 
+        [](char ch1, char ch2){
+            return std::tolower(ch1) == std::tolower(ch2);
+        }
+    );
+}
 
 
 int main() {
@@ -42,6 +53,17 @@ int main() {
 
 
     // buffer overflow guard
-    std::cout << "Vi size: " << Vi.size() << " " << Vi[100] << std::endl;
+    // std::cout << "Vi size: " << Vi.size() << " " << Vi[100] << std::endl;
+
+    std::string search_val("Hello");
+    auto pos = std::find_if(std::begin(words), std::end(words), 
+        [&search_val](const auto& word){return EqualsNoCase(word, search_val);}
+    );
+    if (pos != end(words)) {
+        std::cout << "found item!" << std::endl;
+    }
+    else {
+        std::cout << "item wasn't found!\n";
+    }
     return 0;
 }
